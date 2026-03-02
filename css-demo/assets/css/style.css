@@ -1,8 +1,4 @@
-body
-{
-background-color:
-cornflowerblue;
-}/* ---------------Box Sizing----------------- */
+/* ---------------Box Sizing----------------- */
 html {
   box-sizing: border-box;
 }
@@ -42,4 +38,22 @@ html {
   color: #172635;
   z-index: 9999;
   border-radius: 6px;
+}
+
+/* -------------------- Global Styles ---------------------- */
+body {
+font-family: "Funnel Display", sans-serif;
+}
+
+
+
+header.primary{
+background-color:#3b6b8b;
+color:#ffffff;
+text-align:center;
+text-shadow:2px 2px #000000;
+}
+header.primary a{
+color:#000000;
+text-decoration:none;
 }
