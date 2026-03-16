@@ -101,11 +101,12 @@ nav.primary ul{
   display:flex;
   flex-direction:row;
   justify-content:space-around;
+  gap:30px;
 }
 
 nav.primary ul li{
   list-style-type:none;
-  width: 20%;
+  flex:1;
 }
 
 nav.primary ul li a{
@@ -135,6 +136,8 @@ nav.primary ul li a:hover{
   display:flex;
   flex-direction:row;
   justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
 }
 
 figure{
@@ -142,22 +145,67 @@ figure{
   
 }
 
+#blog article.post{
+  box-shadow:0 4px 8px rgba(0,0,0,.6);
+  padding:10px;
+  font-size: .8rem;
+  flex:1;
+}
+
+h2#recent-posts{
+  flex:0 0 100%;
+}
 
 
 
 
+article.post time, article.post figcaption{
+ text-transform: uppercase;
+ font-size: .6rem;
+}
 
+article.post a{
+color:#3b638b;
+}
 
+aside[aria-label="sidebar"] {
+  background-color:#172635;
+  padding:40px 0;
+  color:#ffffff;
+}
 
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  gap:40px;
+}
 
+aside .container a{
+  color:#ffffff;
+}
 
+aside .container a:last-child{
+  display:block;
+  text-align:right;
+  margin-top:20px;
+}
 
+aside .widget{
+  flex:1;
+}
 
+aside footer{
+  display:none;
+}
 
-
-
-
-
+footer.primary{
+ background-color:#3b638b;
+ padding:5px;
+ color:#fff;
+ text-align:center;
+ text-shadow:1px 1px #000000;
+}
 
 
 
@@ -182,5 +230,5 @@ nav.primary a{
     display:block;
   }  
   
-  
+
 }
