@@ -23,6 +23,31 @@ img{
   margin: 20px auto;
 }
 
+.img-right{
+  float:right;
+  margin:10px 0 10px 20px;
+  border:5px solid #c0c0c0;
+  padding:10px;
+  max-width:33%;
+}
+
+
+.img-left{
+  float:left;
+  margin:10px 20px 10px 0;
+  border:5px solid #c0c0c0;
+  padding:10px;
+  max-width:33%;
+}
+
+.img-center{
+  display:block;
+  margin:20px auto;
+  border:5px solid #c0c0c0;
+  padding:10px;
+  max-width:33%;
+}
+
 
 /* Skip link utility: hidden until focused */
 .visually-hidden {
@@ -85,6 +110,44 @@ header.primary a{
   text-decoration:none;
 }
 
+#practice h3{
+  border-left:10px solid #8b403b;
+  padding: 10px 0 10px 10px;
+
+}
+
+table{
+  width:100%;
+  border:1px solid #8b403b;
+  border-collapse:collapse;
+}
+caption{
+  font-weight:bold;
+  margin:10px;
+
+}
+td{
+  border:1px solid #8b403b;
+  padding:5px;
+}
+tr:nth-child(even){
+  background-color:rgba(0,0,0,.1);
+}
+
+tr:hover{
+  background-color:rgba(0,0,0,.25);
+}
+table td:nth-child(n+2),table td:nth-child(3) {
+  text-align: right;
+}
+  
+
+th{
+  background-color:#8b403b;
+  text-shadow: 2px 2px #000;
+  color:#ffffff;
+  padding: 10px;
+}
 header.primary h1{
   font-size:2.4rem;
   margin:0;
@@ -123,7 +186,7 @@ nav.primary ul li a:hover{
 }
 
 
-#content h2{
+#content h2, #practice h2{
   color:#3b638b;
   border-bottom:1px dashed #c0c0c0;
 }
@@ -138,6 +201,10 @@ nav.primary ul li a:hover{
   justify-content:space-between;
   gap:20px;
   flex-wrap:wrap;
+  border-top:1px solid #c0c0c0;
+  margin-top:12px;
+  border-bottom:1px solid #c0c0c0;
+  padding-bottom:20px;
 }
 
 figure{
@@ -164,8 +231,17 @@ article.post time, article.post figcaption{
  font-size: .6rem;
 }
 
+
 article.post a{
 color:#3b638b;
+}
+
+#practice a{
+  color:#3b638b;
+
+}
+#practice a:hover{
+  text-decoration:none;
 }
 
 aside[aria-label="sidebar"] {
@@ -200,7 +276,7 @@ aside footer{
 }
 
 footer.primary{
- background-color:#3b638b;
+ background-color:#8b403b;
  padding:5px;
  color:#fff;
  text-align:center;
