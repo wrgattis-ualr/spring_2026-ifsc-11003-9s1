@@ -73,7 +73,7 @@ img{
   position: absolute;
   left: 10px;
   top: 10px;
-  background: #ffffff;
+  background: #c0c0c0;
   color: #172635;
   z-index: 9999;
   border-radius: 6px;
@@ -89,24 +89,24 @@ body {
 
 header.primary{
   background-color:#8b403b;
-  color:#ffffff;
+  color:rgba(255, 225, 127, 0.795);
   text-align:center;
   text-shadow:2px 2px #000000;
   /* Longform */
-  padding-top:40px;
-  padding-right:40px;
-  padding-bottom:40px;
-  padding-left:40px;
+  padding-top:30px;
+  padding-right:30px;
+  padding-bottom:30px;
+  padding-left:30px;
   /* Single Value */
-  padding:40px;
+  padding:30px;
   /* T/R/B/L */
-  padding: 40px 40px 20px 40px;
+  padding: 30px 30px 15px 30px;
   /* T/B | L/R */
-  padding: 20px 40px;
+  padding: 15px 30px;
 }
 
 header.primary a{
-  color:#ffffff;
+  color:rgba(255, 225, 127, 0.795);
   text-decoration:none;
 }
 
@@ -330,9 +330,9 @@ blockquote cite {
 
 
 aside[aria-label="sidebar"] {
-  background-color:#172635;
+  background-color:#8b403b;
   padding:40px 0;
-  color:#ffffff;
+  color:rgba(255, 225, 127, 0.795);
 }
 
 aside .container{
@@ -343,7 +343,7 @@ aside .container{
 }
 
 aside .container a{
-  color:#ffffff;
+  color:rgba(255, 225, 127, 0.795);;
 }
 
 aside .container a:last-child{
@@ -363,9 +363,10 @@ aside footer{
 footer.primary{
  background-color:#8b403b;
  padding:5px;
- color:#fff;
+ color:rgba(255, 225, 127, 0.795);
  text-align:center;
  text-shadow:1px 1px #000000;
+ border-top:solid 2px #000000;
 }
 
 
