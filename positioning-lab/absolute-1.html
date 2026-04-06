@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Positioning Lab</title>
+  <title>Positioning Lab - Technique 1</title>
   <style type="text/css">
     /* ---------------Box Sizing----------------- */
     html {
       box-sizing: border-box;
     }
-    *,
-    *:before,
-    *:after {
+    *, *:before, *:after {
       box-sizing: inherit;
     }
     body {
@@ -23,34 +20,65 @@
       color: #FFF;
       text-align: center;
       line-height: 24px;
+      margin: 0; 
+      
     }
     #wrapper {
       background-color: #FFF;
       border: 1px solid #c0c0c0;
       width: 800px;
+      height: 210px; 
       margin-right: auto;
       margin-left: auto;
       text-shadow: 2px 2px #000;
-    }
-    #navy {
-      background-color: #001f3f;
-    }
-    #teal {
-      background-color: #39CCCC;
-    }
-    #blue {
-      background-color: #0074D9;
-    }
-    #aqua {
-      background-color: #7FDBFF;
-    }
-    #footer {
-      background-color: #666;
+      position: relative; 
     }
     h1 {
       color: #000;
       font-weight: normal;
       padding: 50px;
+    }
+    
+    
+    #navy, #teal, #blue, #aqua, #footer {
+      width: 170px;
+      height: 170px;
+    }
+
+    
+    #navy {
+      background-color: #001f3f;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #teal {
+      background-color: #39CCCC;
+      position: fixed;
+      top: 0;
+      right: 0;
+    }
+    #blue {
+      background-color: #0074D9;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
+    #aqua {
+      background-color: #7FDBFF;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+    }
+
+    
+    #footer {
+      background-color: #666;
+      position: absolute;
+      margin-top: 20px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
     }
   </style>
 </head>
@@ -64,5 +92,4 @@
     <div id="footer">Footer</div>
   </section>
 </body>
-
 </html>
