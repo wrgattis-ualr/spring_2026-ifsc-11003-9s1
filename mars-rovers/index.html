@@ -3,35 +3,177 @@
 
 <head>
     <title>NASA's Martian Rovers - Home Page</title>
-    <meta charset="UTF-8" />
-    <meta name="description" content="NASA's rovers have been exploring Mars for decades. Learn about their achievements on the Red Planet." />
-    <meta name="robots" content="noindex" />
-    <meta name="keywords" content="NASA, Mars, Martian, rovers, space exploration, robots, engineering, discoveries, history, missions, curiosity, perseverance, spirit, opportunity" />
-    <meta name="author" content="Ryan Gattis" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-     <!-- Style Sheet-->
+    <meta charset="UTF-8">
+    <meta name="description" content="NASA's rovers have been exploring Mars for decades. Learn about their achievements on the Red Planet.">
+    <meta name="robots" content="noindex">
+    <meta name="keywords" content="NASA, Mars, Martian, rovers, space exploration, robots, engineering, discoveries, history, missions, curiosity, perseverance">
+    <meta name="author" content="Ryan Gattis">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Removed the trailing slash on void elements -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body>  
-<header role="banner" class="primary">
-    <h1>NASA's Martian Explorers</h1>
-    <h2>Perseverence and Curiosity - Rovers on Mars</h2>
+<body id="top">
+    <header class="primary"> <!-- Warning: The banner role is unnecessary for element header. Removed the role.-->
 
-    <nav aria-label="Top Navigation"> <!--Put Bottom Navigation on Footer, with link to the top navigation-->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">Mission History</a></li>
-            <li><a href="faq.html">FAQ</a></li>   
-        </ul>
-    </nav>
-</header>
+
+        <h1>NASA's Martian Explorers</h1>
+        <h2>Perseverance and Curiosity - Rovers on Mars</h2>
+
+        <nav aria-label="Top Navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="history.html">Mission History</a></li>
+                <li><a href="faq.html">FAQ</a></li>   
+            </ul>
+        </nav>
+  </header>
 
 <main>
-<section
+    <section id="rover-introduction">
+        <h2>Mars Rovers - Curiosity & Perseverance - Exploring the Martian Surface</h2>
+        <p>For decades, NASA has sent robotic explorers to Mars to uncover its climatic and geologic history, and to determine if the planet ever hosted life. Discover two of the most advanced rovers ever built.</p>
+    </section>
 
+    <section id="rover-content"> <!-- Validation didn't like the section ID without a header-->
+            <h2>Mission Profiles: Curiosity and Perseverance</h2>
+        <article id="curiosity">
+            <h2>Curiosity</h2>
+            <figure>
+                <img src="assets/img/curiosity.webp" alt="The Curiosity rover traversing the rocky surface of Mars">
+                <figcaption>Curiosity</figcaption>
+            </figure>
+            
+            <h3>Mission Goals & Overview</h3>
+            <p>Curiosity's primary mission is to determine if Mars ever had the proper environmental conditions to support small life forms called microbes.</p>
+        
+            <h3>Launch & Landing</h3>
+            <ul>
+                <li><strong>Launched:</strong> November 26, 2011</li>
+                <li><strong>Landed:</strong> August 5, 2012 (Gale Crater)</li>                
+            </ul>
+
+            <h3>Major Discoveries</h3>
+            <p>Curiosity discovered that ancient Mars had the right chemistry to support living microbes, finding sulfur, nitrogen, oxygen, phosphorus, and carbon—key ingredients necessary for life.</p>
+        
+            <h3>Key Technical Features</h3>
+            <p>The rover is equipped with a radioisotope power system and advanced instruments like the ChemCam, which fires a laser to analyze the composition of vaporized rocks.</p>
+        
+            <a href="https://science.nasa.gov/mission/msl-curiosity/" target="_blank" class="readmorebutton">Read more about Curiosity on NASA's website!</a>
+        </article>
+
+        <article id="perseverance">
+            <h2>Perseverance</h2>
+            <figure>
+                <img src="assets/img/perseverance.webp" alt="The Perseverance rover driving across Jezero Crater">
+                <figcaption>Perseverance</figcaption>
+            </figure>
+                
+            <h3>Mission Goals & Overview</h3>
+            <p>Perseverance is searching for signs of ancient microbial life and is the first mission to collect and cache Martian rock and regolith for future return to Earth.</p>
+                
+            <h3>Launch & Landing</h3>
+            <ul>
+                <li><strong>Launched:</strong> July 30, 2020</li>
+                <li><strong>Landed:</strong> February 18, 2021 (Jezero Crater)</li>
+            </ul>
+            <h3>Major Discoveries</h3>
+            <p>Perseverance successfully generated oxygen from the Martian atmosphere using the MOXIE instrument and deployed Ingenuity, the first helicopter to fly on another planet.</p>
+
+            <h3>Key Technical Features</h3>
+            <p>It features an advanced sample-caching system, specialized cameras for autonomous driving, and microphones that recorded the first audio ever heard from the surface of Mars.</p>
+        
+            <a href="https://science.nasa.gov/mission/mars-2020-perseverance/" target="_blank" class="readmorebutton">Read more about Perseverance on NASA's website!</a>    
+        </article>
+
+    </section>
 </main>
+
+ <aside> <!--Warning: The complementary role is unnecessary for element aside. Removed the role. -->
+    <div class="table-container">
+        
+        <table>
+            <caption>Rover Mission Status</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Rover</th>
+                    <th scope="col">Launch Date</th>
+                    <th scope="col">Landing Site</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Curiosity</th>
+                    <td>November 26, 2011</td>
+                    <td>Gale Crater</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <th scope="row">Perseverance</th>
+                    <td>July 30, 2020</td>
+                    <td>Jezero Crater</td>
+                    <td>Active</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table>
+            <caption>Rover Specifications</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Specification</th>
+                    <th scope="col">Curiosity</th>
+                    <th scope="col">Perseverance</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Weight</th>
+                    <td>899 kg</td>
+                    <td>1,025 kg</td>
+                </tr>
+                <tr>
+                    <th scope="row">Size</th>
+                    <td>Length: 3 m</td>
+                    <td>Length: 3 m</td>
+                </tr>
+                <tr>
+                    <th scope="row">Power</th>
+                    <td>MMRTG (Nuclear)</td>
+                    <td>MMRTG (Nuclear)</td>
+                </tr>
+                <tr>
+                    <th scope="row">Speed</th>
+                    <td>0.14 km/h</td>
+                    <td>0.15 km/h</td>
+                </tr>
+                <tr>
+                    <th scope="row">Instruments</th>
+                    <td>10 total</td>
+                    <td>7 total (+ Ingenuity Helicopter)</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div> 
+</aside>
+
+<footer id="site-footer"> <!--Warning: The contentinfo role is unnecessary for element footer. Removed the role. -->
+    <nav aria-label="Bottom Navigation">
+        <ul>
+            <li><a href="#top">Back to Top</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">Mission History</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="mailto:wrgattis@ualr.edu">Contact Developer</a></li>   
+        </ul>
+    </nav>
+    <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
+</footer>
 </body>
+
+</html>
