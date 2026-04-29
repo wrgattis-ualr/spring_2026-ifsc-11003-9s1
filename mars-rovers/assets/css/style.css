@@ -1,4 +1,4 @@
-/*  Resources to use for CSS
+ /* Resources to use for CSS
     Colors 
     #ae4d28
     #0b0d1
@@ -15,8 +15,8 @@
     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
     https://us-lti.bbcollab.com/collab/ui/session/playback background image 32:52
         
-    4/22 Post-Lecture Update To do list: Add Wufoo form, tweak dimensions of elements, fix alignment issues, look over css
-    */
+    4/22 Post-Lecture Update To do list: Add Wufoo form, tweak dimensions of elements, fix alignment issues, look over css */
+    
 
 html {
   box-sizing: border-box;
