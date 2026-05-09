@@ -9,7 +9,6 @@
     <meta name="keywords" content="NASA, Mars, Martian, rovers, space exploration, robots, engineering, discoveries, history, missions, curiosity, perseverance">
     <meta name="author" content="Ryan Gattis">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Removed the trailing slash on void elements -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,7 +16,8 @@
 </head>
 
 <body id="top">
-    <header class="primary"> <!-- Warning: The banner role is unnecessary for element header. Removed the role.-->
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+    <header class="primary">
         <img src="assets/img/nasa-logo-web-rgb.webp" alt="NASA Logo" class="header-logo">
 
         <h1>NASA's Martian Explorers</h1>
@@ -33,7 +33,7 @@
         </nav>
   </header>
 
-<main>
+<main id="main-content">
     <section id="faq-introduction">
         <h2>Curious about the Red Planet?</h2>
         <p>Sending robots to another world is a massive engineering challenge. Here are some of the most common questions about our Martian explorers.</p>
@@ -68,7 +68,7 @@
     </section>
 </main>
 
-<footer id="site-footer"> <!--Warning: The contentinfo role is unnecessary for element footer. Removed the role. -->
+<footer id="site-footer">
     <nav aria-label="Bottom Navigation">
         <ul>
             <li><a href="#top">Back to Top</a></li>

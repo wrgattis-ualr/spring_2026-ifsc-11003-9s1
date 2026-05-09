@@ -1,4 +1,9 @@
-
+<!-- AI and Design Disclaimer:
+I used AI assistance to generate written content for the rover, mission history, and FAQ sections.
+I used AI assistance for most of the colors.
+The banner ::before, (content=""), and side-by-side rover layout were inspired by the Mars Rover demo Professor Wallace walked us through.
+The "polaroid" image style was inspired by this CodePen: https://codepen.io/havardob/pen/ZOOmMe
+The overall CSS structure and layout came from our class CSS demo, which was then customized for this Mars rover project. -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +15,6 @@
     <meta name="keywords" content="NASA, Mars, Martian, rovers, space exploration, robots, engineering, discoveries, history, missions, curiosity, perseverance">
     <meta name="author" content="Ryan Gattis">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Removed the trailing slash on void elements -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -18,7 +22,8 @@
 </head>
 
 <body id="top">
-    <header class="primary"> <!-- Warning: The banner role is unnecessary for element header. Removed the role.-->
+    <a href="#main-content" class="visually-hidden">Skip to main content</a>
+    <header class="primary">
         <img src="assets/img/nasa-logo-web-rgb.webp" alt="NASA Logo" class="header-logo">
 
 
@@ -30,16 +35,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">Mission History</a></li>
                 <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact Developer</a></li>   
             </ul>
         </nav>
   </header>
 
-<main>
+<main id="main-content">
     <section id="rover-introduction">
         <p>For decades, NASA has sent robotic explorers to Mars to uncover its climatic and geologic history, and to determine if the planet ever hosted life. Discover two of the most advanced rovers ever built.</p>
     </section>
 
-    <section id="rover-content"> <!-- Validation didn't like the section ID without a header-->
+    <section id="rover-content">
             <h2>Mission Profiles: Curiosity and Perseverance</h2>
         <article id="curiosity">
             <h2>Curiosity</h2>
@@ -163,7 +169,7 @@
     </div> 
 </aside>
 
-<footer id="site-footer"> <!--Warning: The contentinfo role is unnecessary for element footer. Removed the role. -->
+<footer id="site-footer">
     <nav aria-label="Bottom Navigation">
         <ul>
             <li><a href="#top">Back to Top</a></li>

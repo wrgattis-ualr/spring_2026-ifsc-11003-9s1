@@ -1,21 +1,9 @@
- /* Resources to use for CSS
-    Colors 
-    #ae4d28
-    #0b0d1
-    #ffcc00  
-    #d9734d
-    #1a1c23
-    https://www.w3schools.com/tools/tool_css_transform.php
-    https://www.w3schools.com/cssref/sel_nth-child.php 
-    https://www.w3schools.com/cssref/css_ref_combinators.php 
-    https://www.w3schools.com/css/css3_transitions.asp 
-    https://www.joshwcomeau.com/css/interactive-guide-to-grid/
-    https://www.w3schools.com/css/css_text_shadow.asp
-    https://www.w3schools.com/css/css_z-index.asp
-    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-    https://us-lti.bbcollab.com/collab/ui/session/playback background image 32:52
-        
-    4/22 Post-Lecture Update To do list: Add Wufoo form, tweak dimensions of elements, fix alignment issues, look over css */
+/* AI and Design Disclaimer:
+I used AI assistance to generate written content for the rover, mission history, and FAQ sections.
+I used AI assistance for most of the colors.
+The banner ::before, (content=""), and side-by-side rover layout were inspired by the Mars Rover demo Professor Wallace walked us through.
+The "polaroid" image style was inspired by this CodePen: https://codepen.io/havardob/pen/ZOOmMe
+The overall CSS structure and layout came from our class CSS demo, which was then customized for this Mars rover project. */
     
 
 html {
@@ -29,6 +17,34 @@ html {
 
 img {
   max-width: 100%;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.visually-hidden:focus,
+.visually-hidden:focus-visible {
+  clip: auto;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 10px 14px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: #c0c0c0;
+  color: #172635;
+  z-index: 9999;
+  border-radius: 6px;
 }
 
 body {
@@ -180,7 +196,7 @@ header.primary nav ul li a:hover {
 
 #rover-content article:hover {
   transform: translate(4px, 4px);
-  box-shadow: 4px 4px 0px #ae4d28;
+  box-shadow: 5px 5px 0px #ae4d28;
 }
 
 #rover-content article h2 {
@@ -346,19 +362,16 @@ tr:hover {
 @media screen and (max-width: 768px) {
   header.primary nav ul, 
   #site-footer nav ul {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
-    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border: none;
   }
   
   header.primary nav ul li a, 
   #site-footer nav ul li a {
-   padding: 8px 12px; 
-   font-size: 0.9rem;
-   border-bottom: 2px solid #ae4d28; 
-   border-top: 2px solid #ae4d28;
-   border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid #ae4d28;
   }
 
   header.primary h1 {
