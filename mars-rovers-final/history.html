@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/accessible-slick-theme.min.css">
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -26,7 +28,7 @@
         <nav aria-label="Top Navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="history.html">Mission History</a></li>
+                <li><a href="history.html" aria-current="page">Mission History</a></li>
                 <li><a href="faq.html">FAQ</a></li>
                 <li><a href="contact.html">Contact Developer</a></li>   
             </ul>
@@ -40,12 +42,17 @@
     </section>
 
     <section id="rover-content">
+        <h2 class="visually-hidden">Detailed Rover Mission Histories</h2>
         
         <article id="curiosity-history">
             <h2>Curiosity</h2>
             <figure>
-                <img src="assets/img/curiosity.webp" alt="The Curiosity rover traversing the rocky surface of Mars">
-                <figcaption>Curiosity</figcaption>
+            <div class="polaroid-slider" role="region" aria-label="Curiosity Rover Image Gallery">
+                <div><img src="assets/img/curiosity-rover.webp" alt="Selfie of the Curiosity rover on the rocky, dusty surface of Gale Crater, Mars."></div>
+                <div><img src="assets/img/curiosity-launch.webp" alt="Atlas V rocket launching Curiosity into space"></div>
+                <div><img src="assets/img/curiosity-route.webp" alt="Map of Curiosity's route in Gale Crater"></div>
+            </div>
+            <figcaption>Curiosity</figcaption>
             </figure>
             <h3>Key Mission Timeline</h3>
             <ul>
@@ -64,14 +71,18 @@
                 <li><strong>Mount Sharp:</strong> Analyzed lower layers of the mountain to understand the transition from a wet, ancient Mars to the cold, dry desert of today.</li>
             </ul>
             
-            <a href="https://science.nasa.gov/mission/msl-curiosity/" target="_blank" class="readmorebutton">Read more about Curiosity on NASA's website!</a>
+            <a href="https://science.nasa.gov/mission/msl-curiosity/" target="_blank" class="readmorebutton" aria-label="Read more about Curiosity on NASA's website!">Read More<span class="visually-hidden">(opens in a new tab)</span></a>
         </article>
 
         <article id="perseverance-history">
             <h2>Perseverance</h2>
             <figure>
-                <img src="assets/img/perseverance.webp" alt="The Perseverance rover driving across Jezero Crater">
-                <figcaption>Perseverance</figcaption>
+            <div class="polaroid-slider" role="region" aria-label="Perseverance Rover Image Gallery">
+                <div><img src="assets/img/perseverance-rover.webp" alt="Perseverance rover and Ingenuity helicopter on the surface of Mars within Jezero Crater"></div>
+                <div><img src="assets/img/perseverance-launch.webp" alt="Atlas V rocket launching Perseverance into space"></div>
+                <div><img src="assets/img/perseverance-route.webp" alt="Map of Perseverance's route in Jezero Crater"></div>
+            </div>
+            <figcaption>Perseverance</figcaption>
             </figure>
             <h3>Key Mission Timeline</h3>
             <ul>
@@ -90,7 +101,7 @@
                 <li><strong>Ingenuity Helicopter:</strong> Proved that aerial scouting is possible on Mars, flying over 70 times before its mission concluded.</li>
             </ul>
             
-            <a href="https://science.nasa.gov/mission/mars-2020-perseverance/" target="_blank" class="readmorebutton">Read more about Perseverance on NASA's website!</a>    
+            <a href="https://science.nasa.gov/mission/mars-2020-perseverance/" target="_blank" class="readmorebutton" aria-label="Read more about Perseverance on NASA's website!">Read More<span class="visually-hidden">(opens in a new tab)</span></a>    
         </article>
         
     </section>
@@ -98,17 +109,23 @@
 
 <footer id="site-footer">
     <nav aria-label="Bottom Navigation">
+        <h2 class="visually-hidden">Footer Links</h2>
         <ul>
             <li><a href="#top">Back to Top</a></li>
             <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">Mission History</a></li>
+            <li><a href="history.html" aria-current="page">Mission History</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="mailto:wrgattis@ualr.edu">Contact Developer</a></li>   
+            <li><a href="mailto:wrgattis@ualr.edu" aria-label="Send an email to the developer, Ryan Gattis">Contact Developer</a></li>   
         </ul>
     </nav>
     <p>&copy; 2026 Ryan Gattis</p>
     <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
 </footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.js"></script>
+<script src="assets/js/scripts.js"></script>
+
 </body>
 
 </html>

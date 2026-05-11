@@ -214,10 +214,48 @@ header.primary nav ul li a:hover {
   transform: rotate(-2deg); 
 }
 
+#rover-content #perseverance figure {
+  transform: rotate(2deg);
+}
+#rover-content #perseverance-history figure {
+  transform: rotate(2deg); 
+}
+
 #rover-content article figure img {
   width: 100%;
   display: block;
   border: 1px solid #333;
+}
+
+.polaroid-slider .slick-slide div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    overflow: hidden;
+    background-color: #000;  
+}
+
+.polaroid-slider img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;        
+    display: block;
+}
+
+
+figure .slick-dotted.slick-slider {
+    margin-bottom: 0px; 
+}
+
+figure .slick-dots li button .slick-dot-icon {
+    color: #333333; 
+}
+
+figure .slick-dots li.slick-active button .slick-dot-icon {
+    color: #ae4d28; 
 }
 
 #rover-content article figcaption {
@@ -225,7 +263,7 @@ header.primary nav ul li a:hover {
   color: #000; 
   font-weight: bold;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 26px;
   font-size: 0.85rem;
 }
 

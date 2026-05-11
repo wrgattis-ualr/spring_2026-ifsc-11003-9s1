@@ -3,12 +3,14 @@ $(document).ready(function() {
     $('.fade').slick({
       dots: true,
       infinite: true,
-      speed: 500,
-      fade: true,
+      speed: 400,
+      fade: false,
+      centerMode: true,
+      centerPadding: '60px',
       slide: 'div',
       cssEase: 'linear',
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 3000
     });
 
 
